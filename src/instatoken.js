@@ -1,0 +1,1 @@
+export const INSTA_TOKEN='2025866324.1677ed0.3b9fcabd94e04d678fe4a8fbc95d79c6'

@@ -1,0 +1,68 @@
+{
+  "version": 2,
+  "name": "vivalinda-site-2019",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build"
+    }
+  ],
+  "routes": [
+    {
+      "src": "^/static/(.*)",
+      "headers": {
+        "cache-control": "s-maxage=1864000 , max-age=1864000"
+      },
+      "dest": "/static/$1"
+    },
+    {
+      "src": "^/robots.txt",
+      "headers": {
+        "cache-control": "s-maxage=1864000 , max-age=1864000"
+      },
+      "dest": "/robots.txt"
+    },
+    {
+      "src": "^/favicon.ico",
+      "headers": {
+        "cache-control": "s-maxage=1864000 , max-age=1864000"
+      },
+      "dest": "/favicon.ico"
+    },
+    {
+      "src": "^/asset-manifest.json",
+      "headers": {
+        "cache-control": "s-maxage=600 , max-age=6000"
+      },
+      "dest": "/asset-manifest.json"
+    },
+    {
+      "src": "^/manifest.json",
+      "headers": {
+        "cache-control": "s-maxage=6000 , max-age=6000"
+      },
+      "dest": "/manifest.json"
+    },
+    {
+      "src": "^/service-worker.js",
+      "headers": {
+        "cache-control": "s-maxage=6000 , max-age=6000"
+      },
+      "dest": "/service-worker.js"
+    },
+    {
+      "src": "^/precache-manifest.(.*)",
+      "headers": {
+        "cache-control": "s-maxage=6000 , max-age=6000"
+      },
+      "dest": "/precache-manifest.$1"
+    },
+    {
+      "src": "^/(.*)",
+      "headers": {
+        "cache-control": "s-maxage=1864000 , max-age=1864000"
+      },
+      "dest": "/index.html"
+    }
+  ]
+}
