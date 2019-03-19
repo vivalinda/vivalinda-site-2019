@@ -18,6 +18,9 @@ componentDidMount() {
   render() {
     return (
       <>
+      <div>
+        <img className="principal" src="./static/viva.jpg" alt="Foto Outono" />
+      </div>
       <div className="row no-gutters photoContainer">
           {
           this.state.value.map( ( item, i ) =>  { 

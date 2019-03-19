@@ -1,6 +1,7 @@
 {
   "version": 2,
   "name": "vivalinda-site-2019",
+  "alias": ["www.vivalinda.com.br", "vivalinda.com.br"],
   "builds": [
     {
       "src": "package.json",
